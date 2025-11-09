@@ -29,9 +29,3 @@ The script worked - my router crashed and all devices lost internet for a few mi
 
 ## Important Note
 This was done safely on my own home network in a test environment. No other networks were affected.
-
-## What I Learned
-- How to find security vulnerabilities
-- Why router updates are important  
-- How to protect home networks
-- Basic scripting for security testing
