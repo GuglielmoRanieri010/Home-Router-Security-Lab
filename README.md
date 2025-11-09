@@ -1,41 +1,37 @@
-# 🔒 Home Router Security Lab
+# 🔒 My Home Router Security Project
 
-![Security Research](https://img.shields.io/badge/Security-Research-blue)
-![Virtual Lab](https://img.shields.io/badge/Environment-Isolated-green)
-![Educational](https://img.shields.io/badge/Content-Educational-orange)
+## What I Did
+I used Kali Linux in a virtual machine to test my home router's security. Here's my step-by-step process:
 
-## 📖 Overview
-Cybersecurity Project — Router Security: Using Kali Linux in a VM, I analyzed the vulnerabilities of my home router and, with the assistance of AI, developed a script in an isolated lab to demonstrate the impacts and document the results.
+### 1. Setup
+- Installed Kali Linux on VirtualBox
+- Got all the tools ready
 
-## ⚠️ Ethics Notice
-This repository contains **educational content only**. All tests were performed in isolated virtual environments. No real networks, devices, or services were accessed or compromised.
+### 2. Finding Vulnerabilities
+Used these tools to scan my router:
+- **nmap** - Found open ports and services
+- **dig** - Tested DNS settings  
+- **slowhttptest** - Checked if router could handle many connections
+- **hping3** - Tested network flooding protection
 
-## 🎯 Project Focus
-- Initial Home Router Analysis
-- Finding Common Vulnerabilities in Consumer Network Equipment
-- Practical Network Hardening and Monitoring Strategies
-- Risk Assessment and Mitigation Methodologies
+### 3. What I Found
+My router had:
+- DNS recursion enabled (could be used for attacks)
+- Vulnerable to Slowloris attacks
+- UPnP exposed (could open ports without permission)
+- Old firmware with known issues
 
-## 🛠️ Lab Environment
-- **Virtualization**: Oracle VirtualBox
-- **Security Operating System**: Kali Linux
-- **Testing Methodology**: Isolated and Controlled Security Assessment
-- **Documentation**: Standards
+### 4. Creating the Script
+With AI help, I made a script that combined all these attacks to test if my router could be taken offline.
 
-## 📊 Research Findings
-- Vulnerability Identification and Impact Analysis
-- Development of Defense-in-Depth Strategies
-- Security Configuration Templates
-- Continuous Monitoring Approaches
+### 5. Results
+The script worked - my router crashed and all devices lost internet for a few minutes. Then I fixed the security issues.
 
-## 🤝 Note on Collaboration with AI
-*The scripting and documentation phases were accelerated using AI-assisted tools. All testing, validation, and analysis were conducted personally and verified in isolated laboratory environments.*
+## Important Note
+This was done safely on my own home network in a test environment. No other networks were affected.
 
-## 📞 Contact
-For technical discussions or career opportunities:
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/guglielmogiusepperanieri/)
-[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:guglielmo.ranieri.10@gmail.com)
----
-
-*Promote cybersecurity awareness through responsible research and education.*
+## What I Learned
+- How to find security vulnerabilities
+- Why router updates are important  
+- How to protect home networks
+- Basic scripting for security testing
